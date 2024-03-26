@@ -1,0 +1,66 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600&display=swap');
+
+:root {
+
+    /* Fonts */
+
+    --title: 'Noto Serif Georgian', sans-serif;
+    --main-font: 'Noto Serif Georgian', sans-serif;
+
+    /* Colours */
+
+    --background: #3f006a0f;
+    --black: #000;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --gray-blue: #abb1c3; 
+    --green: #497569;
+
+     /* Utils */
+
+     --smal-box-shadow: 1px -1px 7px 0 #00000061;
+     --border: 1px solid #00000030;
+    }
+
+    html, body {
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--main-font);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--title);
+        color: var(--green);
+    }
+    
+    main {
+        flex: 1 0 auto;
+        background-color: var(--gray-blue);
+    }
+
+
+/* Header */
+
+.navbar {
+    background-color: var(--gray-blue);
+    box-shadow: var(--smal-box-shadow);
+}
+
+a.nav-link {
+    color: var(--green);
+}
+
+img.logo {
+    width: 18.75rem;
+}
+
+.active {
+    border-bottom: 2px solid var(--black);
+    font-weight: 500;
+}
