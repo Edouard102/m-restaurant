@@ -22,8 +22,17 @@
 
     {% include 'includes/header.html' %}
 
-    <h1>Hello I am Bonkers!</h1>
+    <main>
+        
+        {% block content %}
 
+        <h1>Hello I am Bonkers!</h1>
+       
+        {% endblock %}
+
+    </main>
+
+    {% include 'includes/footer.html' %}
 
 </body>
 </html>

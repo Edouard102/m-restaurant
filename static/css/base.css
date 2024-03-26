@@ -15,6 +15,7 @@
     --black: #000;
     --off-white: #f6f6f6;
     --white: #fff;
+    --white-Smoke: #F9F9F9;
     --gray-blue: #abb1c3; 
     --green: #497569;
 
@@ -41,14 +42,14 @@
     
     main {
         flex: 1 0 auto;
-        background-color: var(--gray-blue);
+        background-color: var(--white-Smoke);
     }
 
 
 /* Header */
 
 .navbar {
-    background-color: var(--gray-blue);
+    background-color: var(--white-Smoke);
     box-shadow: var(--smal-box-shadow);
 }
 
@@ -57,10 +58,60 @@ a.nav-link {
 }
 
 img.logo {
-    width: 18.75rem;
+    height: 10rem;
 }
 
 .active {
     border-bottom: 2px solid var(--black);
     font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--white-Smoke);
+    flex: 1 0 auto;
+}
+
+/* info */
+.info-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+.info {
+    text-align: center;
+}
+
+.info>li {
+    display: inline;
+}
+
+.info i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 3px;
+    color: var(--green);
+}
+
+/* social icon */
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 3px;
+    color: var(--green);
 }
