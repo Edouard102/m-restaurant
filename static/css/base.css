@@ -62,7 +62,7 @@ img.logo {
 }
 
 .active {
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px solid var(--green);
     font-weight: 500;
 }
 
