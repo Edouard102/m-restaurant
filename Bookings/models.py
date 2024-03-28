@@ -3,9 +3,10 @@ from django.contrib.auth.models import User
 
 # Tables with their capacities
 tables_data = [
+    (4, 2),  
     (2, 4),  
-    (6, 2),  
-    (8, 1)   
+    (1, 6),
+    (1, 8)   
 ]
 
 class Table(models.Model):
