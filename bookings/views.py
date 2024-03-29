@@ -19,7 +19,7 @@ def add_booking(request):
             return redirect('booking_detail', pk=booking.pk)
     else:
         form = BookingForm()
-    return render(request, 'Bookings/add_booking.html', {'form': form})
+    return render(request, 'bookings/add_booking.html', {'form': form})
 
 @login_required
 def edit_booking(request, pk):
@@ -32,7 +32,7 @@ def edit_booking(request, pk):
             return redirect('booking_detail', pk=pk)
     else:
         form = BookingForm(instance=booking)
-    return render(request, 'Bookings/edit_booking.html', {'form': form})
+    return render(request, 'bookings/edit_booking.html', {'form': form})
 
 @login_required
 def delete_booking(request, pk):
@@ -41,11 +41,11 @@ def delete_booking(request, pk):
         booking.delete()
         messages.success(request, 'Reservation successfully deleted.')
         return redirect('booking_list')
-    return render(request, 'Bookings/delete_booking.html', {'booking': booking})
+    return render(request, 'bookings/delete_booking.html', {'booking': booking})
 
 class BookingListView(ListView):
     model = Booking
-    template_name = 'Bookings/booking_list.html'
+    template_name = 'bookings/booking_list.html'
     context_object_name = 'bookings'
 
     def get_queryset(self):
